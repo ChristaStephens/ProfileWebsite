@@ -155,3 +155,9 @@ body{
     grid-area: footer;
     border: 1px solid purple;
 }
+
+.footer h3{
+    text-size:2em;
+    text-align: center;
+    color: palevioletred;
+}
