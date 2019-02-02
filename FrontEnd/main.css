@@ -1,0 +1,140 @@
+/*Reset Script, looks standard across all websites*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* starting my css*/
+/*
+@media  (max-width: 600px){
+body{
+    background-color: green;
+    }
+}
+
+@media  (max-width: 900px){
+    body{
+        background-color: yellow;
+    }
+}
+
+@media  (min-width: 1200px){
+    body{
+        background-color:plum;
+    }
+}
+*/
+
+/*start of div container-CSS Grid Setup*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "banner banner banner banner"
+    "banner banner banner banner"
+    "sec1 sec1 sec1 sec2"
+    "sec1 sec1 sec1 sec2"
+    "sec1 sec1 sec1 sec3"
+    "sec1 sec1 sec1 sec3"
+    "sec1 sec1 sec1 sec4"
+    "sec1 sec1 sec1 sec4";
+    grid-column-gap:10px;
+    grid-row-gap: 10px;
+}
+
+/*Nav style*/
+/* use name that you assigned in grid-template-area*/
+.navbar{
+    grid-area: nav;
+    border: 1px solid purple;
+}
+.navbar ul{
+    /*top right bottom left*/
+    padding: 1% 1% 1% 10%;
+    margin: 0;
+}
+.navbar ul li{
+    /*even across the lenght of the container*/
+    display: inline;
+    width: 24%;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+/*banner style*/
+.banner{
+    grid-area: banner;
+    border: 1px solid purple;
+}
+
+
+/*Sec1 style*/
+.sec1{
+    grid-area: sec1;
+    border: 1px solid purple;
+}
+
+/*Sec2 style*/
+.sec2{
+    grid-area: sec2;
+    border: 1px solid purple;
+}
+/*Sec3 style*/
+.sec3{
+    grid-area: sec3;
+    border: 1px solid purple;
+}
+/*Sec4 style*/
+.sec4{
+    grid-area: sec4;
+    border: 1px solid purple;
+}
+/*Footer style*/
+.footer{
+    grid-area: footer;
+    border: 1px solid purple;
+}
