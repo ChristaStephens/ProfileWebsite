@@ -99,7 +99,7 @@ body{
 }
 .navbar ul li{
     /*even across the lenght of the container*/
-    display: inline;
+    display: inline-block;
     width: 24%;
     font-size: 2em;
     letter-spacing: 3px;
@@ -117,11 +117,28 @@ body{
     grid-area: sec1;
     border: 1px solid purple;
 }
+.sec1 p{
+    text-align: center;
+    font-size: 2 em;
+}
+
+.hero {
+    width: 50%;
+    display: inline-block;
+    height: 50%;
+
+}
+
 
 /*Sec2 style*/
 .sec2{
     grid-area: sec2;
     border: 1px solid purple;
+}
+.sec2 h1{
+    text-align: center;
+    font-size: 2em;
+    color: yellow;
 }
 /*Sec3 style*/
 .sec3{
