@@ -1,4 +1,7 @@
-/*Reset Script, looks standard across all websites*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -43,38 +46,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* ----------------- ^^^^^^^^ RESET SCRIPT ^^^^^^^ --------------------------------*/
 /* --------------------------------------------------------------------------------*/
 
 
-/* starting my css*/
-/*
-@media  (max-width: 600px){
-body{
-    background-color: green;
-    }
-}
-
-@media  (max-width: 900px){
-    body{
-        background-color: yellow;
-    }
-}
-
-@media  (min-width: 1200px){
-    body{
-        background-color:plum;
-    }
-}
-*/
 
 html  {
-    background-size: cover;
-    width: 100%;
-  }
+  background-size: cover;
+  width: 100%;
+}
 
-/*start of div container-CSS Grid Setup*/
+
+/* CSS Grid Setup */
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -95,59 +78,64 @@ html  {
 	grid-row-gap: 10px;
 }
 
+/* Navigation Styling */
+.navbar {
+	grid-area: nav;
+	border: 1px solid black;
+}
 
-/*Nav style*/
-/* use name that you assigned in grid-template-area*/
-.navbar{
-    grid-area: nav;
-    border: 1px solid purple;
+.navbar ul {
+  padding: 1% 1% 1% 10%;
+  margin: 0;
 }
-.navbar ul{
-    /*top right bottom left*/
-    padding: 1% 1% 1% 10%;
-    margin: 0;
-}
-.navbar ul li{
-    /*even across the lenght of the container*/
-    display: inline-block;
-    width: 24%;
-    font-size: 2em;
-    letter-spacing: 3px;
+
+.navbar ul li {
+  display: inline-block;
+  width: 24%;
+  font-size: 2em;
+  letter-spacing: 3px;
 }
 
 .navbar ul li a {
-    text-decoration: none;
-  }
-
-/*banner style*/
-.banner{
-    grid-area: banner;
-    border: 1px solid purple;
+  text-decoration: none;
 }
 
-.banner img {
-    height: 300px;
-    width: 100%;
-  
-  }
 
 
-/*Sec1 style*/
-.sec1{
-    grid-area: sec1;
-    border: 1px solid purple;
+
+/* Hero Banner Styling */
+.banner {
+	grid-area: banner;
+	border: 1px solid black;
 }
+
+
+
+
+
+
+
+
+/* Section 1 Styling */
+.sec1 {
+	grid-area: sec1;
+	border: 1px solid black;
+}
+
 .sec1 p {
 	text-align: center;
-	font-size: 1em;
+	font-size: 2em;
 	line-height: 1.2em;
 }
 
-/*Sec2 style*/
-.sec2{
-    grid-area: sec2;
-    border: 1px solid purple;
+
+
+/* Section 2 Styling */
+.sec2 {
+	grid-area: sec2;
+	border: 1px solid black;
 }
+
 .sec2 h1 {
 	text-align: center;
 	font-size: 2em;
@@ -167,10 +155,10 @@ html  {
 }
 
 
-/*Sec3 style*/
-.sec3{
-    grid-area: sec3;
-    border: 1px solid purple;
+/* Section 3 Styling */
+.sec3 {
+	grid-area: sec3;
+	border: 1px solid black;
 }
 
 .sec3 h1 {
@@ -185,19 +173,20 @@ html  {
   font-size: 2em;
 }
 
-/*Sec4 style*/
-.sec4{
-    grid-area: sec4;
-    border: 1px solid purple;
-}
-/*Footer style*/
-.footer{
-    grid-area: footer;
-    border: 1px solid purple;
+/* Section 4 Styling */
+.sec4 {
+	grid-area: sec4;
+	border: 1px solid black;
 }
 
-.footer h3{
-    font-size: 1em;
-	text-align: right;
-    color: palevioletred;
+/* Footer Styling */
+.footer {
+	grid-area: footer;
+	border: 1px solid black;
+}
+
+.footer h3 {
+	font-size: 2em;
+	text-align: center;
+	color: blueviolet;
 }
