@@ -114,6 +114,13 @@ html  {
     font-size: 2em;
     letter-spacing: 3px;
 }
+@media(max-width:1000px){
+    .navbar ul li {
+        display:block;
+        text-align: center;
+        padding: 0% 0% 0% 30%
+    }
+}
 
 .navbar ul li a {
     text-decoration: none;
@@ -126,7 +133,7 @@ html  {
 }
 
 .banner img {
-    height: 300px;
+    height:auto;
     width: 100%;
   
   }
@@ -161,7 +168,7 @@ html  {
 
 .sec2 ol li {
 	text-align: center;
-  font-size: 2em;
+  font-size: 1em;
 	letter-spacing: 3px;
 	line-height: 2em;
 }
@@ -175,14 +182,14 @@ html  {
 
 .sec3 h1 {
 	text-align: center;
-	font-size: 2em;
+	font-size: 1em;
 	color: red;
 }
 
 .sec3 button {
 	width: 100%;
   height: 30%;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 /*Sec4 style*/
@@ -201,3 +208,26 @@ html  {
 	text-align: right;
     color: palevioletred;
 }
+
+
+@media  (max-width: 900px){
+    .container{
+        grid-template-areas: 
+	"nav nav nav"
+	"banner banner banner"
+	"banner banner banner"
+	"sec1 sec1 sec1 "
+	"sec1 sec1 sec1 "
+	"sec1 sec1 sec1 "
+	"sec1 sec1 sec1 "
+	"sec2 sec3 sec4"
+	"sec2 sec3 sec4 "
+	"footer footer footer ";
+        }
+    }
+
+    /* @media  (max-width: 1024px){
+        .hero{
+            background: green url("/FrontEnd/images/computer.jpeg");
+            }
+        } */
